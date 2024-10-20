@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #6b2222;
+    background-color: #c2b96b;
+    background-image: url('/api/placeholder/400/400');
+    background-repeat: repeat;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #c2b96b;
+    background-image: url('/api/placeholder/400/400');
+    background-repeat: repeat;
+}
+
+/* Hovering image styles */
+.hover-image-container {
+    position: fixed;
+    top: 50%;
+    right: -150px;
+    transform: translateY(-50%);
+    transition: right 0.5s ease-out;
+    z-index: 1000;
+}
+
+.hover-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #d3a625;
+    transition: all 0.3s ease;
+}
+
+.hover-image-container:hover {
+    right: 0;
+}
+
+/* Project boxes styles */
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    background-color: #eeba30;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    width: calc(50% - 30px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.project-details {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #d3a625;
+}
+
+.project-item.active .project-details {
+    display: block;
+}
+
+header {
+    background-image: (white);
+    color: rgb(18, 66, 32);
+    text-align: center;
+    padding: 1rem;
+    font-family: "Cinzel", serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+nav {
+    background-color: #05441b;
+    color: rgb(170, 170, 89);
+    padding: 0.5rem;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+nav ul li a {
+    color: #d3a625;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.section {
+    margin-bottom: 40px;
+}
+#about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+}
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+    object-fit: cover;
+    /* border: 5px solid #d3a625; */
+}
+.hover-image {
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-image:hover {
+transform: scale(1.05);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#skills ul, #projects ul, #experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+#skills ul li {
+    display: inline-block;
+    background-color: #2a623d;
+    color: #d3a625;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.project-item, .experience-item {
+    background-color: #eeba30;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+h2 {
+    color: #740001;
+    font-family: "Cinzel", serif;
+}
+
+/* Magical Items */
+/* .wand {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 10px;
+    background-color: #8B4513;
+    transform: rotate(-45deg);
+}
+.wand:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFD700;
+    border-radius: 50%;
+}
+ .broom {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 120px;
+    height: 6px;
+    background-color: #8B4513;
+}
+.broom:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    background-color: #DEB887;
+    border-radius: 0 0 20px 20px;
+} */
+/* .hat {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 60px solid #333;
+}
+.hat:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -40px;
+    width: 80px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+} */ 
